@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mio Test del form</title>
+</head>
+<body>
+    <h2>Insert your data</h2>
+
+    <!--Form con i vari input-->
+    <form>
+        Name <input type="text" id="name">
+        <br><br>
+        Surname <input type="text" id="surname">
+        <br><br>
+        Date of birth <input type="date" id="dateOfBirth">
+        <br><br>
+        <input type="radio" id="maleRadioButton" name="gender" value="M"> Male
+        <input type="radio" name="gender" value="F"> Female
+        <br><br>
+        <input type="checkbox" id="languageCheckBox1" name="language1" value="C++"> C++
+        <input type="checkbox" id="languageCheckBox2" name="language2" value="C#"> C#
+        <input type="checkbox" id="languageCheckBox3" name="language3" value="JavaScript"> JavaScript
+        <br><br>
+        <select id="qualification" name="specialization">
+            <option value="Front-End">Front-End</option>
+            <option value="Back-End">Back-End</option>
+            <option value="Full-Stack">Full-Stack</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Send Data">
+    </form>
+    <br><br>
+    <!--Div per la stampa-->
+    <div id="printName"></div>
+    <div id="printSurname"></div>
+    <div id="printDateOfBirth"></div>
+    <div id="printGender"></div>
+    <div id="printLanguages"></div>
+    <div id="printQualification"></div>
+    <script src="script.js"></script>
+</body>
+</html>
